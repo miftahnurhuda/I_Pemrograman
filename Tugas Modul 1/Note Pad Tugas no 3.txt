@@ -1,0 +1,12 @@
+uses crt;
+var
+a,t:integer;
+hasilkali:integer;
+begin
+writeln('rumus luas jajar genjang');
+write('masukan alas=');readln(a);
+write('masukan tinggi=');readln(t);
+hasilkali:=a*t;
+writeln(a,'*',t,'=',hasilkali);
+readkey;
+end.

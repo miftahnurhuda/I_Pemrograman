@@ -1,0 +1,30 @@
+uses wincrt;
+var
+i,b,c,d: real;
+begin
+i:=3.0;
+b:=2.0;
+c:=0.0;
+i:=i+i;
+b:=b+i;
+c:=c*i;
+write('Nilai i=',i,' b=',b,' c=',c);
+readkey;
+end.
+
+Hasil Akhir;
+Nilai i= 6.000000000000000E+000				   
+(hasil akhir didapat dari input i:=3.0;=>i:=i+i;=>i:=3+3)
+
+b= 8.000000000000000E+000				     
+(hasil akhir didapat dari input b:=2.0;=>b:b+i;=>b:=6+2)
+
+c= 0.000000000000000+000
+(hasil akhir didapat dari inputc:=0.0;=>c:=c x i;c:=0x6)
+
+agar akhiran tidak seperti di atas maka sebaiknya ditambahkan ":2:2" pada akhirannya, akan menjadi seperti ini "write('Nilai i=',i:2:2,' b=',b:2:2,' c=',c:2:2);" maka hasilnya tidak akan di ikuti oleh "0" karena ":2:2" berfungsi untuk memberi jarak.
+
+
+
+
+
