@@ -1,0 +1,13 @@
+uses crt;
+var
+a,b,c:integer;
+begin
+b:=1;
+write('masukan jumlah ayam: ');readln(a);
+for a:= a downto b do
+begin
+c:=a-b;
+writeln('mati ' ,b, ' tinggal ',c);
+end;
+readkey;
+end
