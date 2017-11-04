@@ -1,0 +1,20 @@
+Program Sinus_Cosinus;
+uses crt;
+var
+x: integer;
+Sinus,Cosinus: real;
+begin
+writeln('<<<<< TABEL SINUS DAN COSINUS DALAM DERAJAT >>>>>');
+writeln('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^');
+writeln('    x     sinus(x)   Cosinus(x)');
+writeln('-------------------------------');
+      x:=0;
+         while x<=360 do
+begin
+     Sinus:=sin(x/57.2958);
+     Cosinus:=cos(x/57.2958);
+     writeln(x:5,Sinus:10:2,Cosinus:10:2);
+     x:=x+30;
+     end;
+  readkey;
+end
